@@ -1,9 +1,9 @@
 import * as React from "react"
 import Headbar from "./headbar"
 
-const Header = () => {
+const Header = ({ data }) => {
     return (
-        <Headbar siteTitle={`Title`} />
+        <Headbar key={`headbar`} siteTitle={data.title || `ADD TITLE AS CONFIGURATION`} />
     )
 }
 

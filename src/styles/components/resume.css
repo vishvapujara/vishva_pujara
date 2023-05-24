@@ -1,0 +1,7 @@
+.resume-section-title{
+    color: var(--cyan);
+    margin-top: var(--margin-double);    
+    font-size: var(--font-size-h4);
+    font-weight: var(--font-weight-h2);
+    text-transform: uppercase;
+  }

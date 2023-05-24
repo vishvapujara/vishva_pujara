@@ -1,0 +1,120 @@
+{
+  "about":{
+    "name":"Vishva Pujara",
+    "role": " [Data Scientist] [MBA Finance] ",
+    "tagline": "This is tagline placeholder.",
+    "short_description": "This is the placeholder for short description.",
+    "description": "Donec lobortis volutpat feugiat. Sed finibus nunc gravida, posuere lorem a, rutrum ex. Aenean rhoncus nunc nec neque placerat, in venenatis diam vestibulum. Nunc id tristique odio. In augue ipsum, feugiat a sapien et, varius luctus arcu. Donec rutrum ut tellus tincidunt suscipit. Donec tempor a nunc in sollicitudin. Donec faucibus purus est, eu blandit velit finibus ut. Praesent a sagittis dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla at orci nec leo mollis mattis. Cras faucibus dui sit amet purus molestie, maximus rhoncus ex semper. Quisque justo nunc, bibendum sit amet dignissim a, ullamcorper eget neque. Proin et leo sit amet elit maximus ultrices.",   
+    "email":"vishvapujara@gmail.com",
+    "phone":"+4915254907314",
+    "website":"vishvapujara.com"
+  },
+  "contact":{
+    "name":"Vishva Pujara",
+    "email":"vishvapujara@gmail.com",
+    "phone":"+4915254907314",
+    "website":"vishvapujara.com"
+  },
+  "services":[
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Service 1",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Service 1."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Service 2",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Service 2."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Service 3",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Service 3."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Service 4",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Service 4."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Service 5",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Service 5."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Service 6",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Service 6."
+    }
+  ],
+  "certifications":[
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Certificate 1",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Certificate 1."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Certificate 2",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Certificate 2."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Certificate 3",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Certificate 3."
+    },
+    {
+      "picture":"../images/certifications/placeholder.png",
+      "title":"Certificate 4",
+      "link":"https://www.popatkaran.com/",
+      "description":"This is a placeholder description for Certificate 4."
+    }
+  ],
+  "menu":[
+    {
+      "title":"Home",
+      "url":"/"
+    },
+    {
+      "title":"About",
+      "url":"/about"
+    },
+    {
+      "title":"Contact",
+      "url":"/contact"
+    }
+  ],
+  "socialmedia":[
+    {
+      "title":"Facebook",
+      "url":"https://www.facebook.com/"
+    },
+    {
+      "title":"Instagram",
+      "url":"https://www.instagram.com/"
+    }
+  ],
+  "footerlinks":[
+    {
+      "title":"Home",
+      "url":"/"
+    },
+    {
+      "title":"About",
+      "url":"/about"
+    },
+    {
+      "title":"Contact",
+      "url":"/contact"
+    }
+  ]
+}

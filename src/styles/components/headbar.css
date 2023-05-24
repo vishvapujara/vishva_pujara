@@ -1,8 +1,21 @@
 .offcanvas.offcanvas-end {
     width: 50vw;
+    border-left: none;
 }
 .offcanvas {
     transition: transform .4s ease-in-out;
+    background-color: var(--background);
+}
+.offcanvas-header {
+    justify-content: flex-end;
+}
+.offcanvas-title {
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: var(--margin-double);
+}
+.offcanvas-body {
+    text-align: center;
 }
 .navbar-toggler {
     border: none;
@@ -11,4 +24,14 @@
     text-decoration: none;
     outline: 0;
     box-shadow: none;
+}
+.nav-link {
+    text-transform: uppercase;
+    color: var(--color);
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--cyan);
+}
+.navbar-brand {
+    font-weight: 800;
 }

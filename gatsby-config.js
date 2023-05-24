@@ -3,9 +3,9 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Vishva Pujara`,
+    title: `VISHVA PUJARA`,
     description: `Thats's all about me!`,
-    author: `@popatkaran`,
+    author: `popatkaran.professional@gmail.com`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -14,6 +14,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
       },
     },
     `gatsby-transformer-sharp`,

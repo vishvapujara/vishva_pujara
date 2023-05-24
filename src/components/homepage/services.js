@@ -1,18 +1,17 @@
 import React from 'react'
 import { Row } from 'react-bootstrap'
 
-import services from '../../../content/services.json'
-import ServicesCard from '../../templates/service-card'
+import ServicesCard from '../service-card'
 
-export default function Services() {
+export default function Services({ data }) {
   return (
     <Row className="services half-page text-center" id="home-services">
-      <div className="title intro-section">
+      <div className="section-title">
         <strong>What</strong> I do?
       </div>
 
-      {services.map((service) => {
-        return <ServicesCard service={service} />
+      {data.services.map((service, index) => {
+        return <ServicesCard key={index} service={service} />
       })}
     </Row>
   )

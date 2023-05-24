@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import { Col, Image, Row } from "react-bootstrap"
 
 import PlaceholderImage from '../images/placeholder.png'
+import staticData from '../data/data.json'
+import '../styles/about.css'
+import Resume from "../components/aboutpage/resume"
 
 const AboutPage = () => {
   return (
@@ -12,11 +15,11 @@ const AboutPage = () => {
           <Image
             src={PlaceholderImage}
             className="resize_fit_center img-fluid"
-            alt={'Karan Popat'}
-            title={'Karan Popat'}
+            alt={staticData.about.name}
+            title={staticData.about.name}
           />
         </Col>
-        <Col sm={12} md={12} lg={6} className="top-padding-required member-details">
+        <Col sm={12} md={12} lg={6} className="margin-headbar member-details">
           <Resume />
           <RenderDownloadButton />
         </Col>
@@ -27,12 +30,16 @@ const AboutPage = () => {
 
 export default AboutPage
 
-export const Head = () => <title>About Page</title>
-
-function Resume() {
-  return <></>
-}
+export const Head = () => <title>About Page | {staticData.about.name}</title>
 
 function RenderDownloadButton() {
-  return <></>
+  return (
+    <Row className='section-download'>
+      <Col>
+        <a className='download-resume-button'
+          href="https://raw.githubusercontent.com/popatkaran/assets/c4a5168108ee0b0511b4e33d06674291489ff18a/karan-popat.pdf"
+          download>Download</a>
+      </Col>
+    </Row>
+  )
 }
