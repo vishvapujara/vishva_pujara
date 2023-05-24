@@ -3,10 +3,10 @@ import Layout from "../components/layout"
 import { Col, Row } from "react-bootstrap"
 
 
-const IndexPage = () => {
+const ContactPage = () => {
   return (
     <Layout>
-      <Row id="page-home" className='page-home justify-content-center'>
+      <Row id="page-contact" className='page-contact justify-content-center'>
         <Col>
 
         </Col>
@@ -15,6 +15,6 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default ContactPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Contact Page</title>

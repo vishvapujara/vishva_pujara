@@ -1,0 +1,14 @@
+.offcanvas.offcanvas-end {
+    width: 50vw;
+}
+.offcanvas {
+    transition: transform .4s ease-in-out;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+}
