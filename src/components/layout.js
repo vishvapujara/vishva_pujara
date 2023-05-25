@@ -2,8 +2,9 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import { Container } from "react-bootstrap"
-import Header from "./header"
 
+import Header from "./header"
+import Footer from "./footer"
 import '../styles/global.css';
 
 const Layout = ({ children }) => {
@@ -12,6 +13,9 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
+          author
+          url
         }
       }
     }
@@ -21,6 +25,7 @@ const Layout = ({ children }) => {
     <Container className="container-fluid p-0">
       <Header data={data.site.siteMetadata} />
       {children}
+      <Footer data={data.site.siteMetadata} />
     </Container>
   )
 }

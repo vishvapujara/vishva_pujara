@@ -24,12 +24,11 @@
     --breakpoint-md: 768px;
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
-    --dark-background: #154360;
     --bg-blue: #ecf7fc;
     --bg-red: #fcecef;
     --bg-green: #f7fcec;
     --bg-yellow: #fcf9ec;
-    --bg-pink: ##fcecf7;
+    --bg-pink: #fcecf7;
     --font-size-body: 16px;
     --font-weight-body: 400;
     --font-size-h1: 48px;

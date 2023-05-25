@@ -3,9 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `VISHVA PUJARA`,
+    title: `Vishva Pujara`,
     description: `Thats's all about me!`,
-    author: `popatkaran.professional@gmail.com`,
+    author: `Vishva Pujara`,
+    url: 'https://www.vishvapujara.com/',
   },
   plugins: [
     `gatsby-plugin-image`,

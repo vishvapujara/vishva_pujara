@@ -17,6 +17,9 @@
 .offcanvas-body {
     text-align: center;
 }
+.navbar {
+    background: var(--background);
+}
 .navbar-toggler {
     border: none;
 }
@@ -34,4 +37,5 @@
 }
 .navbar-brand {
     font-weight: 800;
+    text-transform: uppercase;
 }

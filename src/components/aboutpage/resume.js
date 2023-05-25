@@ -26,6 +26,7 @@ function RenderIntro({ resume }) {
     <Row>
       <Col md={9} lg={9} xl={9} xxl={9} className="heading">
         <h2>{resume.name}</h2>
+        {/* <div className='offcanvas-title h5'>{resume.name}</div> */}
         <Card.Title>{resume.subTitle}</Card.Title>
         <Card.Subtitle>{resume.email} | {resume.contact}</Card.Subtitle>
       </Col>
