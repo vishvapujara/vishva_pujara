@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Col, Image, Row } from "react-bootstrap"
+import { Col, Container, Image, Row } from "react-bootstrap"
 
 import PlaceholderImage from '../images/placeholder.png'
 import staticData from '../data/data.json'
@@ -22,11 +22,14 @@ const ContactPage = () => {
           />
         </Col>
         <Col sm={12} md={12} lg={6} className="margin-headbar member-details">
-          <ContactIntro data={staticData} />
-          <ContactInformation data={staticData} />
+          <Container>
+            <ContactIntro data={staticData} />
+            <ContactInformation data={staticData} />
+          </Container>
         </Col>
+
       </Row>
-    </Layout>
+    </Layout >
   )
 }
 

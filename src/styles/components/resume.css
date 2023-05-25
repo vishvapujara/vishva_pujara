@@ -5,3 +5,18 @@
     font-weight: var(--font-weight-h2);
     text-transform: uppercase;
   }
+
+  .section-download {
+    text-align: center;
+    margin: 32px;
+}
+
+  .download-resume-button {
+    padding: 16px 32px;
+    border: 1px solid var(--color);
+    text-transform: uppercase;
+}
+
+.download-resume-button:hover {
+    background: var(--color);
+}

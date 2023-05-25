@@ -11,8 +11,9 @@
 }
 .offcanvas-title {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: var(--font-weight-h1);
     margin: var(--margin-double);
+    padding: var(--padding-double);
 }
 .offcanvas-body {
     text-align: center;
@@ -22,6 +23,7 @@
 }
 .navbar-toggler {
     border: none;
+    margin-right: var(--margin-single);
 }
 .navbar-toggler:focus {
     text-decoration: none;
@@ -36,6 +38,12 @@
     color: var(--cyan);
 }
 .navbar-brand {
-    font-weight: 800;
+    font-weight: var(--font-weight-h1);
     text-transform: uppercase;
+    margin-left: var(--margin-double);
+    margin-right: var(--margin-double);
+}
+
+.offcanvas-header .btn-close {
+    margin-right: var(--margin-single);
 }

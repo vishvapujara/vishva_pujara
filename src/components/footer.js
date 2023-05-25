@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Col, Image, Row } from "react-bootstrap"
+import { Col, Image, Nav, Row } from "react-bootstrap"
 import { Link } from "gatsby"
 
 import FooterLinks from '../data/footer-links.json'
@@ -10,7 +10,7 @@ const Footer = ({ data }) => {
     return (
         <Row id="footer" className="footer half-page" >
             <Col>
-                <Row className="brand-logo">
+                {/* <Row className="brand-logo">
                     <Col>
                         <Image
                             className="center-block img-responsive"
@@ -21,7 +21,7 @@ const Footer = ({ data }) => {
                             alt={data.title}
                         />
                     </Col>
-                </Row>
+                </Row> */}
                 <Row>
                     <Col>
                         <div className="offcanvas-title h5">{data.title}</div>
@@ -29,32 +29,13 @@ const Footer = ({ data }) => {
                 </Row>
                 <Row>
                     <Col>
-                        <ul>
-                            {FooterLinks.map((flink, index) => {
-                                return (
-                                    <li key={index}>
-                                        <a href={flink.url}>{flink.title}</a>
-                                    </li>
-                                )
+                        <Nav className="justify-content-center flex-grow-1 pe-3">
+                            {FooterLinks.map((link) => {
+                                return (<Nav.Link key={link.title} href={link.url}>{link.title}</Nav.Link>)
                             })}
-                        </ul>
+                        </Nav>
                     </Col>
                 </Row>
-                {/* <Row className="text-center">
-          <Col>
-            <SocialMediaLinks />
-          </Col>
-        </Row> */}
-                {/* <Row className="developer-footprints">
-                    <Col>
-                        <div className="copyright-text text-center">
-                            Developed by{' '}
-                            <Link to={data.url} title={data.author}>
-                                {data.author}
-                            </Link>
-                        </div>
-                    </Col>
-                </Row> */}
             </Col>
         </Row>
     )

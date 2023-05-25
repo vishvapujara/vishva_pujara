@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900'); */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --background: #ffffff;
@@ -32,9 +33,9 @@
     --font-size-body: 16px;
     --font-weight-body: 400;
     --font-size-h1: 48px;
-    --font-weight-h1: 900;
+    --font-weight-h1: 700;
     --font-size-h2: 40px;
-    --font-weight-h2: 700;
+    --font-weight-h2: 600;
     --font-size-h3: 32px;
     --font-weight-h3: 500;
     --font-size-h4: 24px;
@@ -43,17 +44,22 @@
     --font-weight-h5: 500;
     --font-size-h6: 8px;
     --font-weight-h6: 900;
-    --padding-single: 15px;
-    --padding-double: 30px;
-    --margin-single: 15px;
-    --margin-double: 30px;
+    --padding-single: 16px;
+    --padding-double: 32px;
+    --margin-single: 16px;
+    --margin-double: 32px;
     --margin-headbar: 56px;
   }
   
   * {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--color) var(--background);
   }
+
+  /*  DEBUG-SCRIPT*/
+  /* * {
+    outline: 1px solid #f00 !important;
+  } */
   
   ::-webkit-scrollbar {
     width: 0px; /* width of the entire scrollbar */
@@ -65,8 +71,8 @@
   }
   
   ::-webkit-scrollbar-thumb {
-    border-radius: 5px; /* roundness of the scroll thumb */
-    border: 6px solid var(--color); /* creates padding around scroll thumb */
+    border-radius: 0px; /* roundness of the scroll thumb */
+    border: 0px solid var(--color); /* creates padding around scroll thumb */
   }
   
   html {
@@ -84,7 +90,8 @@
   }
   
   body {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Work Sans', sans-serif;
     font-weight: var(--font-weight-body);
     font-size: var(--font-size-body);
     margin: 0;

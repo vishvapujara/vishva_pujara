@@ -1,6 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
-import { Col, Image, Row } from "react-bootstrap"
+import { Col, Container, Image, Row } from "react-bootstrap"
 
 import PlaceholderImage from '../images/placeholder.png'
 import staticData from '../data/data.json'
@@ -20,8 +20,10 @@ const AboutPage = () => {
           />
         </Col>
         <Col sm={12} md={12} lg={6} className="margin-headbar member-details">
-          <Resume />
-          <RenderDownloadButton />
+          <Container>
+            <Resume />
+            <RenderDownloadButton />
+          </Container>
         </Col>
       </Row>
     </Layout>
@@ -37,7 +39,7 @@ function RenderDownloadButton() {
     <Row className='section-download'>
       <Col>
         <a className='download-resume-button'
-          href="https://raw.githubusercontent.com/popatkaran/assets/c4a5168108ee0b0511b4e33d06674291489ff18a/karan-popat.pdf"
+          href={staticData.contact.download_resume}
           download>Download</a>
       </Col>
     </Row>

@@ -13,7 +13,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <Row id="page-home" className='page-home justify-content-center'>
-        <Col md={{ span: 12, offset: 3 }}>
+        <Col md={{ span: 9, offset: 0 }}>
           <IntroBanenr data={staticData} />
           <Services data={staticData} />
           <Certifications data={staticData} />
