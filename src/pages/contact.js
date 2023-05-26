@@ -35,4 +35,4 @@ const ContactPage = () => {
 
 export default ContactPage
 
-export const Head = () => <title>Contact Page | {staticData.contact.name}</title>
+export const Head = () => <title>Contact | {staticData.contact.name}</title>

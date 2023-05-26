@@ -1,46 +1,26 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import Layout from "../components/layout"
+import { Col, Row } from "react-bootstrap"
 
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
+import staticData from '../data/data.json'
+import '../styles/home.css'
 
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
+import IntroBanenr from "../components/homepage/intro-baner"
+import Services from "../components/homepage/services"
+import Certifications from "../components/homepage/certifications"
+import Platforms from "../components/homepage/platforms"
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
+    <Layout>
+      <Row id="page-404" className='page-home justify-content-center align-middle'>
+        <Col>
+          <IntroBanenr data={staticData} />
+          <Services data={staticData} />
+          <Certifications data={staticData} />
+          <Platforms data={staticData} />
+        </Col>
+      </Row>
+    </Layout>
   )
 }
 

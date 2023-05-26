@@ -32,7 +32,7 @@ const AboutPage = () => {
 
 export default AboutPage
 
-export const Head = () => <title>About Page | {staticData.about.name}</title>
+export const Head = () => <title>About | {staticData.about.name}</title>
 
 function RenderDownloadButton() {
   if (staticData.config.resume.allow_download) {

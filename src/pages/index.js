@@ -27,4 +27,4 @@ const IndexPage = () => {
 
 export default IndexPage
 
-export const Head = () => <title>Home Page | {staticData.about.name}</title>
+export const Head = () => <title>Home | {staticData.about.name}</title>
