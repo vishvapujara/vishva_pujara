@@ -28,4 +28,18 @@
   .section-title{
     font-size: var(--font-size-h3);
     text-transform: uppercase;
+    margin-top: var(--margin-big);
+    margin-bottom: var(--margin-big);
+  }
+
+  /* #home-services {
+    background-color: var(--bg-green);
+  }
+
+  #home-certification{
+    background-color: var(--bg-blue);
+  } */
+
+  #home-intro, #home-services, #home-certification, #home-platforms {
+    position: relative;
   }

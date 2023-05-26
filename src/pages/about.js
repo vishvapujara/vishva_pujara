@@ -10,7 +10,7 @@ import Resume from "../components/aboutpage/resume"
 const AboutPage = () => {
   return (
     <Layout>
-      <Row id="page-about" className='page-about justify-content-center'>
+      <Row id="page-about" className='page-about justify-content-center  align-middle'>
         <Col sm={12} md={12} lg={6} className="member-cover">
           <Image
             src={PlaceholderImage}
@@ -35,13 +35,16 @@ export default AboutPage
 export const Head = () => <title>About Page | {staticData.about.name}</title>
 
 function RenderDownloadButton() {
-  return (
-    <Row className='section-download'>
-      <Col>
-        <a className='download-resume-button'
-          href={staticData.contact.download_resume}
-          download>Download</a>
-      </Col>
-    </Row>
-  )
+  if (staticData.config.resume.allow_download) {
+    return (
+      <Row className='section-download'>
+        <Col>
+          <a className='download-resume-button'
+            href={staticData.config.resume.url}
+            download>Download</a>
+        </Col>
+      </Row>
+    )
+  }
+
 }

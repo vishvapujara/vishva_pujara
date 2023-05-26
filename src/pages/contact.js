@@ -12,7 +12,7 @@ import ContactIntro from "../components/contactpage/intro"
 const ContactPage = () => {
   return (
     <Layout>
-      <Row id="page-contact" className='page-contact justify-content-center'>
+      <Row id="page-contact" className='page-contact justify-content-center  align-middle'>
         <Col sm={12} md={12} lg={6} className="member-cover">
           <Image
             src={PlaceholderImage}

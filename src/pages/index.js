@@ -8,15 +8,17 @@ import '../styles/home.css'
 import IntroBanenr from "../components/homepage/intro-baner"
 import Services from "../components/homepage/services"
 import Certifications from "../components/homepage/certifications"
+import Platforms from "../components/homepage/platforms"
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Row id="page-home" className='page-home justify-content-center'>
-        <Col md={{ span: 9, offset: 0 }}>
+      <Row id="page-home" className='page-home justify-content-center align-middle'>
+        <Col>
           <IntroBanenr data={staticData} />
           <Services data={staticData} />
           <Certifications data={staticData} />
+          <Platforms data={staticData} />
         </Col>
       </Row>
     </Layout>

@@ -48,6 +48,7 @@
     --padding-double: 32px;
     --margin-single: 16px;
     --margin-double: 32px;
+    --margin-big: 64px;
     --margin-headbar: 56px;
   }
   
@@ -106,7 +107,7 @@
     min-height: 50vh;
   }
   .full-page {
-    min-height: 90vh;
+    min-height: 100vh;
   }
   .one-third-page {
     min-height: 33.33vh;
@@ -180,6 +181,14 @@
   }
 .margin-headbar{
   margin-top: var(--margin-headbar);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
   @import url('./components/cards.css');
   @import url('./components/headbar.css');
