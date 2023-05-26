@@ -4,6 +4,14 @@
   bottom: 0;
   background-color: var(--dark-background);
   color: white;
+  position: relative;
+}
+
+
+#footer .text-logo {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-h1);
+  margin: var(--margin-double);
 }
 
 #footer .brand-logo {
@@ -19,7 +27,7 @@
   padding-right: 20px;
 }
 
-.footer a{
+.footer a {
   text-transform: uppercase;
   color: var(--background);
 }

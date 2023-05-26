@@ -14,7 +14,7 @@ export default function IntroBanenr({ data }) {
     }
   }
   return (
-    <Row className="top-padding-required full-page `${homeIntroRowClass}`" id="home-intro" style={homeIntroStyle}>
+    <Row className={`${homeIntroRowClass} top-padding-required full-page`} id="home-intro" style={homeIntroStyle}>
       <Col className="text-center vertical-center">
         <Image
           className="center-block img-responsive"
@@ -28,6 +28,6 @@ export default function IntroBanenr({ data }) {
           {data.about.short_description || data.about.description}
         </div>
       </Col>
-    </Row>
+    </Row >
   )
 }

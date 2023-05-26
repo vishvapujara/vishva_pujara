@@ -5,17 +5,21 @@
   margin-top: var(--margin-single);
   margin-bottom: var(--margin-single);
 }
+
 .card:hover {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 8px;
 }
+
 .card-body {
   text-align: center;
 }
+
 .card-title {
   margin-top: var(--margin-single);
   margin-bottom: var(--margin-single);
   text-transform: uppercase;
 }
+
 .credential-badge {
   margin: auto;
   text-align: center;

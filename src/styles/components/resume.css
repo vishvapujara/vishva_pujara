@@ -1,22 +1,32 @@
-.resume-section-title{
-    color: var(--cyan);
-    margin-top: var(--margin-double);    
-    font-size: var(--font-size-h4);
-    font-weight: var(--font-weight-h2);
-    text-transform: uppercase;
-  }
-
-  .section-download {
-    text-align: center;
-    margin: 32px;
+.resume-section-title {
+  color: var(--cyan);
+  margin-top: var(--margin-double);
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-h2);
+  text-transform: uppercase;
 }
 
-  .download-resume-button {
-    padding: 16px 32px;
-    border: 1px solid var(--color);
-    text-transform: uppercase;
+h2.resume-title {
+  padding-bottom: 0;
+}
+
+.resume-email, .resume-phone, .resume-location {
+  font-weight: 500;
+  font-size: 12px;
+  padding: 0;
+}
+
+.section-download {
+  text-align: center;
+  margin: 32px;
+}
+
+.download-resume-button {
+  padding: 16px 32px;
+  border: 1px solid var(--color);
+  text-transform: uppercase;
 }
 
 .download-resume-button:hover {
-    background: var(--color);
+  background: var(--color);
 }

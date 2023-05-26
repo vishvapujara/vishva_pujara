@@ -6,6 +6,7 @@ import { Container } from "react-bootstrap"
 import Header from "./header"
 import Footer from "./footer"
 import '../styles/global.css';
+import staticData from '../data/data.json'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
     <Container className="container-fluid p-0">
       <Header data={data.site.siteMetadata} />
       {children}
-      <Footer data={data.site.siteMetadata} />
+      <Footer data={staticData} />
     </Container>
   )
 }

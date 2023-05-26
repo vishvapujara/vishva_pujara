@@ -1,12 +1,12 @@
 import * as React from 'react'
-import { Card, Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 
 import resume from '../../data/vishvapujara.json'
 import '../../styles/components/resume.css'
 
 const Resume = () => {
   return (
-    <Container className="resume" id={`resume-${resume.slug}`}>
+    <>
       <RenderIntro resume={resume} />
       <RenderSummary resume={resume} />
       <RenderSkills resume={resume} />
@@ -15,7 +15,7 @@ const Resume = () => {
       {/* <RenderPortfolio resume={resume} /> */}
       <RenderEducation resume={resume} />
       <RenderCertifications resume={resume} />
-    </Container>
+    </>
   )
 }
 export default Resume
@@ -25,10 +25,11 @@ function RenderIntro({ resume }) {
   return (
     <Row>
       <Col md={9} lg={9} xl={9} xxl={9} className="heading">
-        <h2>{resume.name}</h2>
-        {/* <div className='offcanvas-title h5'>{resume.name}</div> */}
-        <Card.Title>{resume.subTitle}</Card.Title>
-        <Card.Subtitle>{resume.email} | {resume.contact}</Card.Subtitle>
+        <h2 className='resume-title'>{resume.name}</h2>
+        <h5 className='resume-subtitle'>{resume.subTitle}</h5>
+        <h5 className='resume-email'><strong>{`Email:`}</strong> {resume.email}</h5>
+        <h5 className='resume-phone'><strong>{`Phone:`}</strong> {resume.contact}</h5>
+        <h5 className='resume-location'>{resume.location}</h5>
       </Col>
     </Row>
   )

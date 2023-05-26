@@ -23,6 +23,21 @@
     "home_platforms": {
       "display": false,
       "bg_color": ""  
+    },
+    "image_logo": {
+      "display": false
+    },
+    "text_logo": {
+      "display": true
+    },
+    "social_media": {
+      "display": false
+    },
+    "footer_links": {
+      "display": true
+    },
+    "copyright": {
+      "display": false
     }
   },
   "about":{

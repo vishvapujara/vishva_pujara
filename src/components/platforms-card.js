@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Col, Image } from 'react-bootstrap'
+import { Card, Col } from 'react-bootstrap'
 
 export default function PlatformsCard({ platform }) {
   return (

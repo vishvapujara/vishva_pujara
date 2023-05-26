@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import navLinks from '../data/menu-links.json'
+import '../styles/components/headbar.css'
 
 const expand = `false`
 

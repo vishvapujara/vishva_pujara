@@ -10,6 +10,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -24,7 +26,24 @@ module.exports = {
         path: `${__dirname}/src/data`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Vishva Pujara`,
+        short_name: `Portfolio Website`,
+        description: `It's all about Vishva Pujara.`,
+        lang: `en`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        start_url: `/`,
+        theme_color_in_head: false,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/about/`, `/contact/`],
+      },
+    },
   ],
 }
